@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "name": "New Balance",
+    "backgroundImage": "/images/shops/shop1.jpg",
+    "logo": "/images/logos/logo1.png",
+    "rating": 4.8,
+    "reviews": 3421,
+    "specialOffer": "Save 25%",
+    "callToActionText": "View all products",
+    "backgroundVideo": "/videos/newbalance.mp4"
+  },
+  {
+    "id": 2,
+    "name": "Apple",
+    "backgroundImage": "/images/shops/shop2.jpg",
+    "logo": "/images/logos/logo2.png",
+    "rating": 4.85,
+    "reviews": 7142,
+    "specialOffer": "Save 10%",
+    "promoTextContinuation": "on orders over $950",
+    "backgroundVideo": "/videos/apple.mp4",
+    "products": [
+      { "id": "1", "image": "/images/products/iphone16.jpg", "name": "Apple iPhone 16 pro 512GB", "price": "$1799.00" },
+      { "id": "2", "image": "/images/products/macbookair.jpg", "name": "MacBook Air M1 256GB", "price": "$1199.00" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Revlon",
+    "backgroundImage": "/images/shops/shop3.jpg",
+    "logo": "/images/logos/logo3.png",
+    "rating": 4.5,
+    "reviews": 2890,
+    "specialOffer": "20% Off Today",
+    "products": [
+      { "id": "1", "image": "/images/products/revlon-pro-one-step-dryer-and-volumiser-542528.webp", "name": "REVLON 2-in-1 Pro Collection Salon One Step Hair Dryer and Volumiser Black", "price": "$45.00" },
+      { "id": "2", "image": "/images/products/revlon-uniqone-hair-treatment-original-150ml-osullivans-pharmacy-toiletries-8432225129785-786321.webp", "name": "Revlon UniqOne Hair Treatment Original 150ml", "price": "$50.00" },
+      { "id": "3", "image": "/images/products/revlon-ultra-hd-lacquer-volume-liquid-lipstick-530-quartz-5-9-ml-1683879104.webp", "name": "Revlon Ultra HD Volume Rossetto Liquido 530 Quarzo 5,9 ml", "price": "$5.15" },
+      { "id": "4", "image": "/images/products/image_511ed2aa-1384-4cca-9381-58e1dcf5254a.webp", "name": "Revlon Photoready Candid Glow Foundation 550 Mocha", "price": "$4.99" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Primal Queen",
+    "backgroundImage": "/images/shops/shop4.jpg",
+    "logo": "/images/logos/logo4.png",
+    "rating": 4.3,
+    "reviews": 1250,
+    "specialOffer": "Save 15%"
+  },
+  {
+    "id": 5,
+    "name": "Nike",
+    "slogan": "Just do it.",
+    "backgroundImage": "/images/shops/shop5.avif",
+    "logo": "/images/logos/logo5.png",
+    "rating": 4.8,
+    "reviews": 5123,
+    "specialOffer": "10% Off",
+    "promoTextContinuation": "on orders over $99",
+    "backgroundVideo": "/videos/nike.mp4",
+    "callToActionText": "Shop now",
+    "products": [
+      { "id": "1", "image": "/images/products/dunk.jpg", "name": "NIKE Dunk Low", "price": "$99.00" },
+      { "id": "2", "image": "/images/products/airmax90.jpg", "name": "NIKE Air Max 90", "price": "$169.00" },
+      { "id": "3", "image": "/images/products/airmax1.jpg", "name": "NIKE Air Max 1", "price": "$149.00" },
+      { "id": "4", "image": "/images/products/airforce.jpg", "name": "NIKE Air Force 1", "price": "$115.00" }
+    ],
+    "recentlyViewed": [
+      { "id": "11", "image": "/images/products/dunk.jpg", "name": "Air Jordan 1", "price": "$120.00" }
+    ],
+    "categories": [
+      {
+        "title": "Men's Footwear",
+        "products": [
+          { "id": "101", "image": "/images/products/airmax90.jpg", "name": "Nike Pegasus 40", "price": "$130.00" },
+          { "id": "102", "image": "/images/products/airforce.jpg", "name": "Nike Vapormax", "price": "$190.00" }
+        ]
+      },
+      {
+        "title": "Women's Footwear",
+        "products": [
+          { "id": "103", "image": "/images/products/airmax1.jpg", "name": "Nike Invincible Run", "price": "$180.00" },
+          { "id": "104", "image": "/images/products/dunk.jpg", "name": "Nike Structure", "price": "$140.00" }
+        ]
+      },
+      {
+        "title": "Accessories",
+        "products": [
+          { "id": "105", "image": "/images/products/airforce.jpg", "name": "Nike Hat", "price": "$30.00" },
+          { "id": "106", "image": "/images/products/airmax90.jpg", "name": "Nike Gym Bag", "price": "$55.00" }
+        ]
+      }
+    ],
+    "collections": [
+      {
+        "title": "New Arrivals",
+        "image": "/images/collections/collection1.jpg"
+      },
+      {
+        "title": "Best Sellers",
+        "image": "/images/collections/collection2.jpg"
+      },
+      {
+        "title": "New Arrivals",
+        "image": "/images/collections/collection1.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "id": "1",
+        "src": "/videos/products/nike1.mp4",
+        "shopName": "Nike",
+        "shopLogo": "/images/logos/logo5.png",
+        "isFollowing": true,
+        "product": {
+          "id": "1",
+          "image": "/images/products/dunk.jpg",
+          "name": "NIKE Dunk Low",
+          "price": "$99.00",
+          "rating": 4.7,
+          "reviews": 4287
+        }
+      },
+      {
+        "id": "2",
+        "src": "/videos/products/nike2.mp4",
+        "shopName": "Nike",
+        "shopLogo": "/images/logos/logo5.png",
+        "isFollowing": true,
+        "product": {
+          "id": "1",
+          "image": "/images/products/dunk.jpg",
+          "name": "NIKE Dunk Low",
+          "price": "$99.00",
+          "rating": 4.7,
+          "reviews": 4287
+        }
+      },
+      {
+        "id": "3",
+        "src": "/videos/products/nike3.mp4",
+        "shopName": "Nike",
+        "shopLogo": "/images/logos/logo5.png",
+        "isFollowing": true,
+        "product": {
+          "id": "1",
+          "image": "/images/products/dunk.jpg",
+          "name": "NIKE Dunk Low",
+          "price": "$99.00",
+          "rating": 4.7,
+          "reviews": 4287
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Fashion Nova",
+    "backgroundVideo": "https://cdn.shopify.com/videos/c/vp/c30586210a024fbe904627708544ddd7/c30586210a024fbe904627708544ddd7.SD-480p-1.5Mbps-38966853.mp4",
+    "logo": "https://cdn.shopify.com/shop-assets/shopify_brokers/fnova.myshopify.com/1732588622/FNLogos_dark.png?format=webp&width=640",
+    "rating": 4.3,
+    "reviews": 1250,
+    "specialOffer": "Save 15%"
+  },
+  {
+    "id": 7,
+    "name": "DFYNE",
+    "backgroundImage": "https://cdn.shopify.com/shop-assets/shopify_brokers/pythonperformanceus.myshopify.com/1700499058/L1A8451EditEdit2Edit.jpeg?width=750?width=1152&width=800",
+    "logo": "https://cdn.shopify.com/shop-assets/shopify_brokers/pythonperformanceus.myshopify.com/1700499039/DFYNEWhite1000pxwidePNG.png?format=webp&width=640",
+    "rating": 4.3,
+    "reviews": 1250,
+    "specialOffer": "Save 15%"
+  }
+]

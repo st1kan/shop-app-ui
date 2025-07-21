@@ -1,0 +1,178 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 9999;
+}
+
+.scrollContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.videoWrapper {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: calc(80px + 5.5rem + 1rem);
+  right: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+
+  .shopLogo {
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: .5rem;
+    border: .1rem solid white;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+    background: white;
+  }
+
+  .soundBtn {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+}
+
+.left {
+  position: absolute;
+  bottom: 5.5rem;
+  left: .5rem;
+  right: 1.2rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  .nameAndFollow {
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+    gap: 1rem;
+
+    .shopName {
+      color: white;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .followBtn {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+  }
+  .productBox {
+    background: white;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: .5rem;
+    pointer-events: auto;
+    width: 100%;
+
+    .favBtn {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    .productInfo {
+      flex-grow: 1;
+      font-size: 0.9rem;
+
+      .productName {
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        margin-top: 0;
+      }
+
+      .productMeta {
+        font-size: 0.75rem;
+        color: #333;
+        margin-bottom: 0;
+      }
+    }
+
+    .favBtn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.bottomBar {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem 2rem 5rem;
+  pointer-events: auto;
+
+  button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

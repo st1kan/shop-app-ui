@@ -1,0 +1,142 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+
+  background: transparent;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.9) 30%,
+        rgba(255, 255, 255, 0.3) 70%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .backButtonWrapper {
+    position: fixed;
+    z-index: 2;
+    background: white;
+    left: calc(50% - 9rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+    width: 38.39px !important;
+    height: 38.39px !important;
+
+    .button {
+      padding: 0;
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #888;
+      transition: transform 0.2s, color 0.3s;
+
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+    .selected {
+      color: #000;
+    }
+  }
+
+  .cartButtonWrapper {
+    position: fixed;
+    z-index: 1;
+    right: calc(50% - 9rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #5025e7;
+    aspect-ratio: 1 / 1;
+    transition: all 0.5s ease;
+    width: 38.39px !important;
+    height: 38.39px !important;
+
+    .button {
+      padding: 0;
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #d5d5d5;
+      transition: transform 0.2s, color 0.3s;
+
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    span {
+    }
+  }
+
+  .animate {
+    transform: translateY(-10px) !important;
+  }
+
+  .backButtonWrapper2 {
+    background-color: transparent;
+    box-shadow: none;
+
+    .button {
+      visibility: hidden;
+    }
+  }
+
+  .innerNav {
+    z-index: 2;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .button {
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #888;
+      transition: transform 0.2s, color 0.3s;
+
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+    .selected {
+      color: #000;
+    }
+  }
+}

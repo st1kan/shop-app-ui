@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 9999px;
+  padding: 5px 16px;
+  width: calc(100% - 32px);
+  max-width:400px;
+  height: 40px;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.icon {
+  color: #555;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.input {
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  color: #333;
+}
+
+.placeholder {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  left: 46px;
+  color: #888;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

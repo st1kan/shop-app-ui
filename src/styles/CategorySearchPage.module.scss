@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 0px;
+  margin: 1rem 0;
+}
+
+.category {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: flex;
+
+  a {
+    display: flex;
+    align-self: flex-end;
+    color: black;
+    svg {
+      background: #eeeeee;
+      border-radius: 50%;
+      width: 1rem;
+      height: 1rem;
+      padding: .2rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.shops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ccc;
+}
+
+.bgImage {
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.6);
+  z-index: 0;
+}
+
+.logoWrap {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  .logo {
+    object-fit: contain;
+    width: 50%;
+    height: 100%;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.bottomOverlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.3rem 0.7rem 0.7rem 0.7rem;
+  background: transparent;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  .offer {
+    background-color: #5025e7;
+    color: white;
+    padding: 2px 6px;
+    font-size: 0.65rem;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .rating {
+    font-size: 0.7rem;
+    margin: 0;
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+
+    .reviewCount {
+      font-weight: 400;
+    }
+  }
+}

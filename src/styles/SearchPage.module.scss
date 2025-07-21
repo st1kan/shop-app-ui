@@ -1,0 +1,151 @@
+.searchPage {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.searchBarWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.categoryCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  span {
+    position: absolute;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+.loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+  svg {
+    margin-left: 0.5rem;
+  }
+}
+
+.categoryView {
+  .backButton {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #666;
+  }
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.subcategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subcategoryCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.featuredBrands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brandCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+
+  .brandInfo {
+    h4 {
+      margin: 0 0 0.2rem;
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: #666;
+    }
+  }
+}
+
+.categorySection {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,359 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color, #000);
+  background: var(--bg-color, #fff);
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+
+  &.specialOfferVisible {
+    .media {
+      margin-top: 53px;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+    }
+    .overlay {
+      margin-top: 53px;
+    }
+  }
+
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: black !important;
+
+    .shopDetails {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .specialOffer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(37, 37, 37) !important;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    height: 60px;
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    z-index: 0;
+    font-weight: normal;
+
+    span {
+      background-color: #5025e7;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 5px;
+      width: fit-content;
+    }
+
+    &.visible {
+      position: absolute;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .media {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: all 0.3s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    aspect-ratio: 3 / 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+    transition: all 0.3s ease;
+
+    img {
+      max-width: 200px;
+      transition: all 0.3s ease;
+      will-change: transform;
+    }
+  }
+
+  .shopDetails {
+    position: relative;
+    margin-top: -11rem;
+    padding: 1rem 1.2rem 2.1rem;
+    height: 8rem;
+    background: linear-gradient(to bottom, transparent, var(--bg-color, #fff));
+    z-index: 5;
+    transition: all 0.3s ease;
+
+    .shopMeta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8.5rem;
+      transition: all 0.3s ease;
+
+      h1 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
+        color: inherit;
+      }
+
+      p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.8rem;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        button {
+          display: flex;
+          background: transparent;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          color: inherit;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+
+        .followBtn {
+          padding: 5px;
+          border-radius: .2rem;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(6px);
+        }
+      }
+    }
+  }
+
+  .productListings {
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    background: transparent;
+    color: black;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    flex-grow: 1;
+
+    .productSection {
+      margin-bottom: 2rem;
+
+      .sectionTitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .productGrid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .productCard {
+          width: 45%;
+          max-width: 200px;
+          border-radius: 0.5rem;
+          overflow: hidden;
+
+          .productImage {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+          }
+
+          .productInfo {
+            padding: 0.5rem;
+
+            .productName {
+              font-size: 0.8rem;
+              margin: 0;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .productPrice {
+              font-size: 0.9rem;
+              font-weight: 600;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .recentlyViewedSection {
+      .sectionTitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .productGrid {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .productCard {
+          width: 45%;
+          max-width: 200px;
+          border-radius: 0.5rem;
+          overflow: hidden;
+
+          .productImage {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+          }
+
+          .productInfo {
+            padding: 0.5rem;
+
+            .productName {
+              font-size: 0.8rem;
+              margin: 0;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .productPrice {
+              font-size: 0.9rem;
+              font-weight: 600;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .stickyHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease;
+
+    .logoDiv {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .stickyLogo {
+        margin-right: .5rem;
+        background: #f4f4f4;
+        border-radius: .5rem;
+        width: 36px !important;
+        height: 36px !important;
+        border-radius: 8px;
+        object-fit: contain;
+      }
+    }
+
+    .stickyActions {
+      display: flex;
+      gap: 0.8rem;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      button {
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: inherit;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .followBtn {
+        padding: 5px;
+        border-radius: .2rem;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+      }
+    }
+  }
+}
+
+
+.backButton {
+  position: fixed;
+  left: 20px;
+  bottom: 35px;
+  background: var(--theme-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bellWrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .crossLine {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+  }
+}
+
+

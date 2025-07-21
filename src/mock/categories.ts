@@ -1,0 +1,16 @@
+export const allCategories = [
+  { id: 1, name: 'Women', image: '/images/women.jpg' },
+  { id: 2, name: 'Men', image: '/images/men.jpg' },
+  { id: 3, name: 'Beauty', image: '/images/beauty.jpg' },
+  { id: 4, name: 'Food & drinks', image: '/images/food.jpg' },
+  { id: 5, name: 'Baby & toddler', image: '/images/baby.jpg' },
+  { id: 6, name: 'Home', image: '/images/home.jpg' },
+  { id: 7, name: 'Fitness', image: '/images/fitness.jpg' },
+  { id: 8, name: 'Accessories', image: '/images/accessories.jpg' },
+  { id: 9, name: 'Shoes', image: '/images/shoes.jpg' },
+  { id: 10, name: 'Tech', image: '/images/tech.jpg' },
+  { id: 11, name: 'Pets', image: '/images/pets.jpg' },
+  { id: 12, name: 'Books', image: '/images/books.jpg' },
+  { id: 13, name: 'Outdoors', image: '/images/outdoors.jpg' },
+  { id: 14, name: 'Toys', image: '/images/toys.jpg' },
+];
